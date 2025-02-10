@@ -8,6 +8,11 @@
 
     <!-- Link Javascript Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+    <!--links CSS-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../Individual_destinoslivres/style/style.css">
@@ -17,7 +22,7 @@
 
     
     <!-- Link media quey -->
-    <link rel="stylesheet" href="../style/style-mediaquery.css">
+    <link rel="stylesheet" href="../Individual_destinoslivres/style/style-mediaquery.css">
 
     <title>Destinos Livres</title>
 </head>
@@ -25,33 +30,41 @@
 <body>
     <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html" id="logo"><span>DESTINOS LIVRES</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span><i class="fa-solid fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#destinos">Destinos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#quemsomos">Quem Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#nosache">Nos Ache</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <a href="../Individual_destinoslivres/html/login.html">Login</a>
-          <a href="../Individual_destinoslivres/html/cadastro.html">Cadastre-se</a>
-        </form>
+      <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo"><img src="../Individual_destinoslivres/images/DESTINOS LIVRES.png" alt="destinoslivres" class="img-fluid" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html#destinos">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html#quemsomos">Quem Somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html#nosache">Nos Ache</a>
+                  </li>
+              </ul>
+              <form class="d-flex">
+                  <a class="btn btn-outline-primary me-2" href="../Individual_destinoslivres/html/login.html">Login</a>
+                  <a class="btn btn-primary" href="../Individual_destinoslivres/html/cadastro.html">Cadastre-se</a>
+              </form>
+          </div>
       </div>
-    </div>
   </nav>
+  
+  <script>
+      $(document).ready(function () {
+          $('.navbar-nav a').on('click', function () {
+              $('.navbar-collapse').collapse('hide');
+          });
+      });
+  </script>
     <!-- End Nav Bar -->
 
     <!-- Section Main -->
@@ -60,8 +73,8 @@
         <div class="main-txt">
           <h1><span>Viaje sem limites, explore sem medo!</span> 
           </h1>
-          <button><i class="fa-solid fa-bullhorn"></i> Pra mim!</button>
-          <button><i class="fa-regular fa-clipboard"></i><a class="#" href="#"> Pra nós!</a></button>
+          <button><i class="fa-solid"></i> Pra mim!</button>
+          <button><i class="fa-regular"></i> Pra nós!</button>
         </div>
           <div class="main-img">
             <img src="../Individual_destinoslivres/images/galera.jpg" alt="galera">
@@ -82,7 +95,7 @@
                 <p><i class="fa-solid fa-calendar-days"></i> 15/04/25 à 15/04/2025</p>
                 <h3>Belém</h3>               
                  <p><span>Saindo de</span> Macapá</p>
-                  <a class="destinos" href="#">Saber mais</a>  
+                  <a class="destinos-btn">Saber mais</a>  
                   <img src="../Individual_destinoslivres/images/belem.jpg" alt="belem" class="rounded float-end" width="80px">               
                     </div>
                 </div>
@@ -94,7 +107,7 @@
                     <p><i class="fa-solid fa-calendar-days"></i> 15/04/25 à 15/04/2025</p>
                     <h3>Paris </h3>
                     <p><span>Saindo de </span> São Paulo</p>
-                    <a class="destinos-btn" href="#">Saber mais</a> 
+                    <a class="destinos-btn">Saber mais</a> 
                     <img src="../Individual_destinoslivres/images/paris.jpg" alt="paris" class="rounded float-end" width="80px">                   
                     </div>
                 </div>
@@ -106,7 +119,7 @@
                     <p><i class="fa-solid fa-calendar-days"></i> 15/04/25 à 15/04/2025</p>
                     <h3>México</h3>
                     <p><span>Saindo de</span> Belo Horizonte</p>
-                    <a class="destinos-btn" href=".#">Saber mais</a>
+                    <a class="destinos-btn">Saber mais</a>
                     <img src="../Individual_destinoslivres/images/mexico.jpg" alt="méxico" class="rounded float-end" width="80px">                    
                     </div>
                 </div>
@@ -120,8 +133,8 @@
                   <div class="card-body">
                   <p><i class="fa-solid fa-calendar-days"></i> 15/04/25 à 15/04/2025</p>
                   <h3>Panamá</h3>
-                  <p><span>Saindo de</span> Rio de Janeiro</p>
-                  <a class="destinos-btn" href="#">Saber mais</a>
+                  <p><span>Saindo do</span> Rio de Janeiro</p>
+                  <a class="destinos-btn">Saber mais</a>
                   <img src="../Individual_destinoslivres/images/panama.jpg" alt="panama" class="rounded float-end" width="80px">                
                   </div>
               </div>
@@ -132,8 +145,8 @@
                     <div class="card-body">
                     <p><i class="fa-solid fa-calendar-days"></i> 15/04/25 à 15/04/2025</p>
                     <h3>Agra - Índia</h3>
-                    <p><span>Saindo de</span> - Belém</p>
-                    <a class="destinos" href="#">Saiba mais</a>
+                    <p><span>Saindo de</span> Belém</p>
+                    <a class="destinos-btn">Saiba mais</a>
                     <img src="../Individual_destinoslivres/images/agraindia.jpg" alt="agra" class="rounded float-end" width="80px">                    
                     </div>
                 </div>
@@ -145,7 +158,7 @@
                     <p><i class="fa-solid fa-calendar-days"></i>15/04/25 à 15/04/2025</p>
                     <h3>Jerusalém</h3>
                     <p><span>Saindo de</span> São Paulo</p>
-                    <a class="destinos-btn" href="#">Saiba mais</a>
+                    <a class="destinos-btn">Saiba mais</a>
                     <img src="../Individual_destinoslivres/images/jerusalem.jpg" alt="jerusalem" class="rounded float-end" width="80px">                  
                     </div>
                 </div>
@@ -160,7 +173,7 @@
                   <p><i class="fa-solid fa-calendar-days"></i>15/04/25 à 15/04/2025</p>
                   <h3>Tóquio</h3>
                   <p><span>Saindo de</span> Manaus</p>
-                  <a class="destinos-btn" href="#">Saiba mais</a>
+                  <a class="destinos-btn">Saiba mais</a>
                   <img src="../Individual_destinoslivres/images/toquio.jpg" alt="toquio" class="rounded float-end" width="80px">                  
                 </div>
               </div>
@@ -172,7 +185,7 @@
                     <p><i class="fa-solid fa-calendar-days"></i> 15/04/25 à 15/04/2025</p>
                     <h3>Belo Horizonte</h3>
                     <p><span>Saindo de</span> Belém</p>
-                    <a class="destinos-btn" href="#">Saiba mais</a>
+                    <a class="destinos-btn">Saiba mais</a>
                     <img src="../Individual_destinoslivres/images/belohorizonte.jpg" alt="belo horizonte" class="rounded float-end" width="80px">                    
                     </div>
                 </div>
@@ -184,7 +197,7 @@
                     <p><i class="fa-solid fa-calendar-days"></i> 15/04/25 à 15/04/2025</p>
                     <h3>Cidade do Cabo</h3>
                     <p><span>Saindo de</span> Curitiba</p>
-                    <a class="destinos-btn" href="#">Candidatar-se</a>
+                    <a class="destinos-btn">Saiba mais</a>
                     <img src="../Individual_destinoslivres/images/cidadedocabo.jpg" alt="cidade do cabo" class="rounded float-end" width="80px">                   
                     </div>
                 </div>
@@ -198,19 +211,23 @@
   <!-- Section quemsomos -->
   <section class="quemsomos" id="quemsomos">
     <div class="container mt-5">
-      <div class="como-funciona-content" >
-        <div class="quemsomos-txt" style="margin: 100px">
+      <div class="row align-items-center">
+        <div class="col-md-6">
           <h2>Quem Somos</h2>
-          <p>Destinos Livres é um portal inovador dedicado à promoção de experiências de viagem únicas e seguras, com um foco especial na segurança e no bem-estar de mulheres que viajam sozinhas. Recém-lançada, a Destinos Livres tem a missão de se tornar uma referência no mercado de turismo, conectando viajantes a destinos incríveis e serviços personalizados que atendem às suas necessidades e desejos.</p>
+          <p>Destinos Livres é um portal inovador dedicado à promoção de experiências de viagem únicas e seguras, com um foco especial na segurança e no bem-estar de mulheres que viajam sozinhas.</p>
+          
+          <p>Recém-lançada, a Destinos Livres tem a missão de se tornar uma referência no mercado de turismo, conectando viajantes a destinos incríveis e serviços personalizados que atendem às suas necessidades e desejos.</p>
 
-          <p>Destinos Livres, acreditamos que viajar deve ser uma experiência acessível e inspiradora para todos. Oferecemos uma ampla gama de pacotes de viagens, desde escapadas relaxantes até aventuras emocionantes, sempre com um olhar atento à segurança e à experiência do cliente. Nossos serviços incluem consultoria de viagem, reservas de hospedagem, transporte e atividades, tudo pensado para proporcionar tranquilidade e satisfação.</p>
+          <p>Na Destinos Livres, acreditamos que viajar deve ser uma experiência acessível e inspiradora para todos.</p>
+          
+          <p>Oferecemos uma ampla gama de pacotes de viagens, desde escapadas relaxantes até aventuras emocionantes, sempre com um olhar atento à segurança e à experiência do cliente. Nossos serviços incluem consultoria de viagem, reservas de hospedagem, transporte e atividades, tudo pensado para proporcionar tranquilidade e satisfação.</p>
             
           <p>Estamos comprometidos em construir um futuro onde a diversidade e a inclusão sejam celebradas em cada viagem. Junte-se a nós nessa jornada e descubra como é possível "Viajar sem limites, explorar sem medo."</p>
         </div>
 
          <!-- Coluna da Imagem -->
         <div class="col-md-6 d-flex justify-content-center">
-          <img src="../images/mocastrem.jpg" alt="mocastrem" class="img-fluid rounded">
+          <img src="../Individual_destinoslivres/images/mocastrem.jpg" alt="mocastrem" class="img-fluid rounded">
         </div>
       </div>
     </div>
@@ -218,11 +235,11 @@
   <!-- End Section quem somos -->
 
   <!-- Seção de nos ache -->
-  <section id="nosache" class="nosache">
+  <section class="nosache" id="nosache" >
     <div class="container mt-5">
         <div class="row align-items-center">
             <!-- Coluna do Formulário -->
-            <div class="col-md-6" style="margin-top: 70px">
+            <div class="col-md-6">
                 <h2 class="fw-bold">Fala com a gente!</h2>
                 <p class="fs-5">Se você tiver alguma dúvida ou precisar de mais informações, fala com a gente!</p>
                 <form>
@@ -248,23 +265,24 @@
 
             <!-- Coluna da Imagem -->
             <div class="col-md-6 d-flex justify-content-center">
-                <img src="../images/maebb.jpg" alt="maebb" class="img-fluid rounded">
+                <img src="../Individual_destinoslivres/images/maebb.jpg" alt="maebb" class="img-fluid rounded">
             </div>
         </div>
     </div>
+
+    <footer id="footer">
+      <h1><span>Destinos Livres</span></h1>
+      <div class="credit">
+        <p>Designed By Thai Oliveira</p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright Thai Oliveira. All rights reserved</p>
+      </div>
+    </footer>
   </section>
   <!-- End Seção de nos ache -->
 
-
-  <footer id="footer">
-    <h1><span>Destinos Livres</span></h1>
-    <div class="credit">
-      <p>Designed By <a href="#">Thai Oliveira</a></p>
-    </div>
-    <div class="copyright">
-      <p>&copy;Copyright Thai Oliveira. All rights reserved</p>
-    </div>
-  </footer>
-
 </body>
 </html>
+
+

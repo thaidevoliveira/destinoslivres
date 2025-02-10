@@ -5,7 +5,7 @@
         height: 510px;
     }
     .main-txt {
-        padding-top: 59px;
+        padding-top: 10px;
     }
 }
 
@@ -27,7 +27,6 @@
 
 
 
-
 /* Inicío Media query página Cadastro */
 
 @media screen and (min-width: 150px) {
@@ -36,9 +35,6 @@
         padding: 0px;
         margin-top: -30px;
     }
-    .container-txt {
-        height: 20vh;
-        margin-top: -105px;
     }
     .form-container {
         width: 100%;
@@ -48,31 +44,10 @@
         border-radius: 10px;
         padding: 15px;
     }
-    .margem {
-        margin-top: 86px;
-    }
-
-    .botoes {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .item-link {
-        text-align: center;
-        text-decoration: none;
-        font-weight: 500;
-        color: #00A651;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-    }
-}
 
 
 /* Início Media query página Quem Somos */
-@media (max-width: 1024px)
+@media (max-width: 1024px) {
     .main-quemsomos {
         height: 400px; 
     }
@@ -85,7 +60,7 @@
         font-size: 1rem;
     }
 
-    .quemsommos-content. {
+    .quemsommos-content {
         flex-direction: column; 
         text-align: center;
     }
@@ -98,7 +73,7 @@
         max-width: 90%;
     }
 
-
+}
 
 @media (max-width: 768px) {
     .main-quemsomos {

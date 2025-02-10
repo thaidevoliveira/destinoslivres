@@ -1,43 +1,31 @@
 body {
-  background-color: #f8f9fa;
+  background-color: #CBD5E1;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
 h1 {
   font-size: 1.8em;
   font-weight: 600;
   margin-left: -15px;
 }
+
 p {
   text-align: center;
-  padding: 0px 30px 0px 30px;
+  padding: 30px 30px 0px 30px;
 }
-.icon-acces {
-    margin-right: 20px;
-    font-size: 80px !important;
-}
+
 .font-p {
   font-size: 1.1em;
 }
+
 .form-container {
-  background-color: white;
+  background-color: #D8B4FE ;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px auto; /* Add margin for better spacing */
-}
-
-.main-content {
-  min-height: 196px; /* Adjust container height to account for navbar */
-  display: block;
-}
-
-.form-header {
-  font-size: 24px;
-  font-weight: bold;
-  color: #6D28D9;
-  margin-bottom: 20px;
+  margin: 110px auto; 
 }
 
 .form-control {
@@ -58,23 +46,21 @@ p {
 }
 
 .form-text {
-  color: #F3F4F6;
+  color: #E5E7EB;
 }
 
-.container-txt {
-  height: 10vh;
-  margin-top: -115px;
-}
 .text-center {
   margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.676);
 }
+
 .botoes {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
+
 .item-link {
   text-align: center;
   text-decoration: none;
@@ -105,20 +91,6 @@ p {
   border: 1px  dashed rgba(0, 0, 0, 0.147);
   border-radius: 5px;
 }
-#link-termos {
-  color: #6D28D9;
-  padding: 0px;
-  margin: 0px;
-  height: 0px;
-}
-
-.form-container .cadastre{
-    background-color: #f9f9f9;
-    color: #6D28D9;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 15px;
-}
 
 #my-senha {
   background-color: #f9f9f9;
@@ -131,4 +103,16 @@ p {
 
 .email {
   display: none;
+}
+
+.cadastre {
+  background-color: #3012db;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.cadastre:hover {
+  background-color: #14005c;
 }

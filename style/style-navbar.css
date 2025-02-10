@@ -4,24 +4,16 @@
 }
 
 #navbar{
-    background: #f9f9f9;
+    background:#CBD5E1;
 
-}
-#logo{
-    font-size: 36px;
-    font-weight: 550;
-    color: #404041;
-    margin-bottom: 5px;
-}
-#logo span{
-    color: #1E3A8A;
 }
 
 .navbar-toggler span{
     color: #1E3A8A;
 }
+
 .navbar-nav{
-    margin-left: 20px;
+    margin-left: 80px;
 }
 .nav-item .nav-link{
     font-size: 16px;
@@ -50,7 +42,7 @@
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .d-flex a:hover{
