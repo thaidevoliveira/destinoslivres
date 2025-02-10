@@ -1,0 +1,157 @@
+/* Inicío Media query página Index */
+@media screen and (max-width: 400px) {
+
+    .main {
+        height: 510px;
+    }
+    .main-txt {
+        padding-top: 59px;
+    }
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+
+    .main-txt {
+        padding-top: 59px;
+    }
+    .main {
+        height: 70vh;
+    }
+    .main-img img {
+        padding-bottom: 38px;
+    }
+}
+
+/* Fim media query página Index */
+
+
+
+
+/* Inicío Media query página Cadastro */
+
+@media screen and (min-width: 150px) {
+    .container-pq {
+        max-width: 650px;
+        padding: 0px;
+        margin-top: -30px;
+    }
+    .container-txt {
+        height: 20vh;
+        margin-top: -105px;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .form-control {
+        border: 2px solid rgba(0, 0, 0, 0.619);
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .margem {
+        margin-top: 86px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-link {
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        color: #00A651;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+
+
+/* Início Media query página Quem Somos */
+@media (max-width: 1024px)
+    .main-quemsomos {
+        height: 400px; 
+    }
+
+    .main-txt h1 {
+        font-size: 2rem;
+    }
+
+    .main-txt h2 {
+        font-size: 1rem;
+    }
+
+    .quemsommos-content. {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .quemsomos-img img {
+        max-width: 90%;
+    }
+
+    .quemsomos-txt {
+        max-width: 90%;
+    }
+
+
+
+@media (max-width: 768px) {
+    .main-quemsomos {
+        height: 350px;
+        padding: 20px;
+    }
+
+    .main-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-txt h2 {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .quemsomos-img img {
+        max-width: 80%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .main-quemsomos {
+        height: 300px;
+        padding: 15px;
+    }
+
+    .main-txt h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-txt h2 {
+        font-size: 0.8rem;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .quemsomos-content {
+        padding: 0 10px;
+    }
+
+    .quemsomos-img img {
+        max-width: 100%;
+    }
+
+}
+/* Fim Media query página quemssomos */

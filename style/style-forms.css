@@ -1,0 +1,134 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-left: -15px;
+}
+p {
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+}
+.icon-acces {
+    margin-right: 20px;
+    font-size: 80px !important;
+}
+.font-p {
+  font-size: 1.1em;
+}
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Add margin for better spacing */
+}
+
+.main-content {
+  min-height: 196px; /* Adjust container height to account for navbar */
+  display: block;
+}
+
+.form-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6D28D9;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.btn-primary {
+  background-color: #6D28D9;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #6D28D9;
+}
+
+.form-text {
+  color: #F3F4F6;
+}
+
+.container-txt {
+  height: 10vh;
+  margin-top: -115px;
+}
+.text-center {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.676);
+}
+.botoes {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.item-link {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #6D28D9;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.item-link:hover {
+  box-shadow: 0px 5px 5px rgba(71, 71, 71, 0.131);
+  margin-top: -2px;
+  color: #4A148C;
+  transition: 0.2s;
+}
+
+#item-link {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #6D28D9;
+}
+
+.container-terms:hover {
+  border: 1px  dashed rgba(0, 0, 0, 0.147);
+  border-radius: 5px;
+}
+#link-termos {
+  color: #6D28D9;
+  padding: 0px;
+  margin: 0px;
+  height: 0px;
+}
+
+.form-container .cadastre{
+    background-color: #f9f9f9;
+    color: #6D28D9;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+#my-senha {
+  background-color: #f9f9f9;
+  color: #6D28D9;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  margin-top: 15px;
+}
+
+.email {
+  display: none;
+}

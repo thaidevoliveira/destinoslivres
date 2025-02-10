@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style-forms.css">
+    <link rel="stylesheet" href="../style/style-navbar.css">
+    <link rel="stylesheet" href="../style/style-footer.css">
+
+
+
+    <!-- CSS Media Query-->
+    <link rel="stylesheet" href="../style/style-mediaquery.css">
+
+    <script src="../javascript/script.js"></script>
+
+    <title>Vamos?</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html" id="logo"><span>DESTINOS LIVRES</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#destinos">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quemsomos.html">Nos Ache</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a href="login.html">Login</a>
+          <a href="cadastro.html">Cadastre-se</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <!-- End Nav Bar -->
+
+<div class="sticky-sm-bottom container container-pq d-flex justify-content-center margem">
+    <div class="form-container">
+      <h2 class="form-header text-center">Faça login na sua conta  
+      </h2>
+      <div>
+        <p class="font-p fw-light">ACESSE ATRÁVES DE SUA <span class="fw-bold">REDE SOCIAL </span>OU CONTA GOOGLE.</p>
+          <div class="botoes">
+            <button class="item-link" type="button">Entrar com Facebook</button>
+            <button class="item-link" type="button">Entrar com Google</button>
+          </div>
+        </div>
+      <div style="border-top: 1px solid black; margin: 30px;"></div>
+      <form action="#" method="POST">
+        <div class="d-flex">
+            <div class="p-2 mb-2">
+                <input type="radio" name="check" id="icpf" onclick="OpcaoCpf()">
+                <label for="icpf">CPF</label>
+            </div>
+            <div class="p-2">
+                <input type="radio" name="check" id="iemail" onclick="OpcaoEmail()">
+                <label for="iemail">E-mail</label>
+            </div>
+        </div>
+        <div class="mb-3" id="cpf">
+          <label for="cpf" class="form-label" id="cpf/email">CPF</label>
+          <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato: 000.000.000-00" required>
+          <div class="form-text">Formato: 000.000.000-00</div>
+        </div>
+
+        <div class="mb-3 email" id="email">
+          <label for="cpf" class="form-label" id="cpf/email">E-mail</label>
+          <input type="text" class="form-control" id="cpf" placeholder="Digite seu e-mail" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato: seunome@gmail.com" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Lembrar das informações de login?</label><br>
+            
+        </div>
+        <a href="" id="my-senha">Esqueci minha senha</a>
+       
+        <button type="submit" class="btn btn-primary mt-5">Fazer login</button>
+      </form>
+      <p>Não tem uma conta? <a class="cadastre" href="cadastro.html">Cadastre-se</a></p>
+    </div>
+</div>
+
+<footer id="footer">
+  <h1><span>Destinos Livres</span></h1>
+  <div class="credit">
+    <p>Designed By <a href="#">Thai Oliveira</a></p>
+  </div>
+  <div class="copyright">
+    <p>&copy;Copyright Thai Oliveira. All rights reserved</p>
+  </div>
+</footer>
+    
+</body>
+</html>

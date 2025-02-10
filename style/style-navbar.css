@@ -1,0 +1,58 @@
+.navbar{
+    padding-top: 0%;
+
+}
+
+#navbar{
+    background: #f9f9f9;
+
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: #404041;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #1E3A8A;
+}
+
+.navbar-toggler span{
+    color: #1E3A8A;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #1E3A8A;
+    color: white;
+}
+#navbar form button{
+    background: #1E3A8A;
+    color: white;
+    border: none;
+}
+
+.d-flex a{
+    padding: 10px;
+    background: #1E3A8A;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.d-flex a:hover{
+    transform: scale(1.1);
+}

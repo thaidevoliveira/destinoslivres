@@ -1,0 +1,40 @@
+/* quemsomos */
+.quemsomos-content   {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.quemsomos-img {
+    flex: 1;
+}
+
+.quemsomos-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quemsomos-txt {
+    flex: 1;
+}
+
+.quemsomos-txt h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.quemsomos-txt p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+/* End quemsomos */
+
+
+
