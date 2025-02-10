@@ -1,0 +1,46 @@
+/* Lógico_1: */
+
+CREATE TABLE Viajante_Login (
+    id_viajante__PK_ NUMBER,
+    data_nascimento DATEVAR,
+    Telefone VARCHAR2(15),
+    fk_Reserva_Pacote_de_Viagem_id_reserva__PK_ NUMBER,
+    id_login__PK_ NUMBER,
+    email VARCHAR2(255),
+    id_viajante__FK_ NUMBER,
+    senha VARCHAR2(128),
+    PRIMARY KEY (id_viajante__PK_, id_login__PK_)
+);
+
+CREATE TABLE Reserva_Pacote_de_Viagem (
+    id_reserva__PK_ NUMBER,
+    data_reserva DATE,
+    id_pacote__FK_ NUMBER,
+    id_usuario__FK_ NUMBER,
+    status VARCHAR2,
+    id_pacote NUMBER,
+    id_destino__FK_ NUMBER,
+    descricao VARCHAR2,
+    nome_pacote VARCHAR2,
+    preco NUMBER,
+    PRIMARY KEY (id_reserva__PK_, id_pacote)
+);
+
+CREATE TABLE Destino (
+    id_destino NUMBER PRIMARY KEY,
+    nome_destino VARCHAR2(100),
+    pais VARCHAR2(50),
+    descricao VARCHAR2(500),
+    fk_Reserva_Pacote_de_Viagem_id_reserva__PK_ NUMBER,
+    fk_Reserva_Pacote_de_Viagem_id_pacote NUMBER
+);
+ 
+ALTER TABLE Viajante_Login ADD CONSTRAINT FK_Viajante_Login_2
+    FOREIGN KEY (fk_Reserva_Pacote_de_Viagem_id_reserva__PK_, ???)
+    REFERENCES Reserva_Pacote_de_Viagem (id_reserva__PK_, ???)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Destino ADD CONSTRAINT FK_Destino_2
+    FOREIGN KEY (fk_Reserva_Pacote_de_Viagem_id_reserva__PK_, fk_Reserva_Pacote_de_Viagem_id_pacote)
+    REFERENCES Reserva_Pacote_de_Viagem (id_reserva__PK_, id_pacote)
+    ON DELETE RESTRICT;
